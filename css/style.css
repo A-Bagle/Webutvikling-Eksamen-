@@ -281,7 +281,7 @@ a {
 .REVIEWS {
     width: 100%;
     padding: 2rem;
-    background-color: #531b89;
+    background-color: #FFFFF0;
     text-align: center;
 }
 
@@ -296,7 +296,6 @@ a {
     background-color: white;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .review img {
@@ -305,6 +304,135 @@ a {
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
+/*product html------------------------------------------------------*/
+
+.product-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.product-images {
+    width: 60%;
+}
+
+.main-product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.thumbnail:hover {
+    border: 1px solid #531b89;
+}
+
+.product-info {
+    width: 35%;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #101010;
+    margin-bottom: 1rem;
+}
+
+.brand-link a {
+    font-size: 1rem;
+    color: #531b89;
+    text-decoration: none;
+}
+
+.brand-link a:hover {
+    text-decoration: underline;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #531b89;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.color-info {
+    margin-top: 1.5rem;
+}
+
+.color-info h3 {
+    font-size: 1rem;
+    color: #101010;
+}
+
+.color-option {
+    font-size: 1.2rem;
+    color: #531b89;
+}
+
+
+.related-products {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.related-products h2 {
+    font-size: 2rem;
+    color: #101010;
+    margin-bottom: 2rem;
+}
+
+.product-card {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.sofa-description {
+    font-size: 1rem;
+    color: #101010;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.sofa-price {
+    font-size: 1.2rem;
+    color: #531b89;
+    font-weight: bold;
+}
+
 
 /*Footer part------------------------------------------------------*/
 
