@@ -253,52 +253,84 @@ h1 {
     font-weight: bold;
 }
 
-
-.CATEGORIES_TEXT {
-    color: #101010;
-    position: relative; 
-    top: 0; 
-    left: 0;
-    transform: none; 
-    z-index: 5; 
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%; 
-    text-align: center;
-    margin-bottom: 1rem;
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
 }
 
 
 .POPULAR_CATEGORIES {
-    position: relative; 
-    margin-top: 2rem; 
-    text-align: center;
-    padding: 2rem 0; 
-}
-
-.POPULAR_CATEGORIES .CATEGORIES_TEXT {
     position: relative;
-    top: 0; 
-    left: 0; 
-    transform: none; 
-    z-index: 5;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
+    margin-top: 2rem;
     text-align: center;
-    margin-bottom: 1rem; 
+    padding: 2rem 0;
 }
 
-.POPULAR_CATEGORIES img {
-    width: 80%;
-    height: auto; 
+/* Categories Text */
+.CATEGORIES_TEXT {
+    color: #101010;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.POPULAR_CATEGORIES h2,
+.POPULAR_CATEGORIES h3 {
+    margin: 0;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns, equal width */
+    gap: 1.5rem; /* Space between images */
+    padding: 0 1rem; /* Padding around the grid */
+    justify-items: center; /* Center items horizontally */
+}
+
+.category-card {
+    position: relative; /* To position the text on top of the image */
+    border: 2px solid #000; /* Black border */
+    border-radius: 8px; /* Optional rounded corners */
+    overflow: hidden; /* To make sure text doesn’t overflow the image */
+}
+
+.image-container {
+    position: relative; /* To allow absolute positioning of the text */
+    width: 100%; /* Make sure the container spans the entire card */
+    height: 250px; /* Set a fixed height for all images */
+    overflow: hidden; /* Ensures images don't exceed container */
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    margin: 0 auto; 
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Shadow for better visibility */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.image.link a {
+    font-size: 0.9rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.image.link a:hover {
+    text-decoration: underline;
 }
 
 .REVIEWS {
@@ -330,7 +362,6 @@ h1 {
 
 /*product html------------------------------------------------------*/
 
-/* Breadcrumb Styling */
 .breadcrumb {
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -352,7 +383,6 @@ h1 {
     margin-left: 5px;
 }
 
-/* Product Area */
 .PRODUCT-AREA {
     display: flex;
     justify-content: space-between;
@@ -361,7 +391,6 @@ h1 {
     align-items: flex-start;
 }
 
-/* Image Area */
 .image-area {
     display: flex;
     gap: 1rem;
@@ -393,7 +422,6 @@ h1 {
     border-radius: 8px;
 }
 
-/* Product Information */
 .product-info {
     width: 40%;
     padding: 1rem;
@@ -437,7 +465,6 @@ h1 {
     color: #531b89;
 }
 
-/* Related Products */
 .related-products {
     margin-top: 3rem;
 }
@@ -678,7 +705,7 @@ table, th, td {
   }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
