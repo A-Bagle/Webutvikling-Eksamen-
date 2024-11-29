@@ -28,7 +28,8 @@ html, body {
 
 body {
     background-color: #FFFFF0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    padding-top: 100px;
 }
 
 h1 {
@@ -307,7 +308,7 @@ a {
 
 /*product html------------------------------------------------------*/
 
-.product-area {
+.PRODUCT-AREA{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -343,7 +344,7 @@ a {
     border: 1px solid #531b89;
 }
 
-.product-info {
+.product-info-2 {
     width: 35%;
     padding: 1rem;
     background-color: #f9f9f9;
@@ -433,6 +434,90 @@ a {
     font-weight: bold;
 }
 
+/*checkout index------------------------------------------------------*/
+
+.shopping-bag {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.product-card {
+    display: flex;
+    justify-content: space-between; /* Space between content and options */
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 2; /* Takes up more space compared to options */
+}
+
+.product-card .product-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1; /* Takes less space than info */
+    text-align: right;
+}
+
+.product-options label {
+    font-weight: bold;
+}
+
+.product-options input,
+.product-options select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.payment-section input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.total-price {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #531b89;
+    font-weight: bold;
+}
+
+.consent-section {
+    margin-top: 1rem;
+}
+
+.consent-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.consent-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
 
 /*Footer part------------------------------------------------------*/
 

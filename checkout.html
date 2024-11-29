@@ -43,4 +43,152 @@
 
     </header>
     
+    <main>
+
+        <h1>Checkout</h1>
+    
+        <section class="shopping-bag">
+            <h2>Your Shopping Bag</h2>
+        
+            <!-- Product Card 1 -->
+            <section class="product-card">
+                <img src="img/Sofa_3.jpg" alt="Brown Leather Sofa">
+                <section class="product-info">
+                    <p class="product-name">Brown Leather Sofa</p>
+                    <p class="product-color">Color: Brown</p>
+                    <p class="product-price">$399.99</p>
+                </section>
+                <section class="product-options">
+                    <label for="amount-1">Amount:</label>
+                    <input type="number" id="amount-1" name="amount-1" value="1" min="1">
+        
+                    <label for="size-1">Size:</label>
+                    <select id="size-1" name="size-1">
+                        <option value="small">Small</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </section>
+            </section>
+        
+            <!-- Product Card 2 -->
+            <section class="product-card">
+                <img src="img/Sofa_4.jpg" alt="Small Yellow Sofa">
+                <section class="product-info">
+                    <p class="product-name">Small Yellow Sofa</p>
+                    <p class="product-color">Color: Yellow</p>
+                    <p class="product-price">$299.99</p>
+                </section>
+                <section class="product-options">
+                    <label for="amount-2">Amount:</label>
+                    <input type="number" id="amount-2" name="amount-2" value="1" min="1">
+        
+                    <label for="size-2">Size:</label>
+                    <select id="size-2" name="size-2">
+                        <option value="small" selected>Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </section>
+            </section>
+        </section>
+    
+        <!-- Section 2: Personal Details -->
+        <section class="personal-details">
+            <h2>Your Information</h2>
+            <form>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+    
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+    
+                <label for="street-address">Street Address:</label>
+                <input type="text" id="street-address" name="street-address" required>
+    
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" name="postal-code" required>
+    
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+    
+                <button type="submit">Save</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </section>
+    
+        <!-- Section 4: Payment -->
+        <section class="payment-section">
+            <h2>Payment</h2>
+            <form>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+    
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+    
+                <label for="cvc">CVC/CVV:</label>
+                <input type="text" id="cvc" name="cvc" placeholder="123" required>
+    
+                <p class="total-price">Total to be paid: <strong>$699.98</strong></p>
+    
+                <button type="submit">Pay</button>
+    
+                <section class="consent-section">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        Yes, I accept the terms.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Yes, please send me newsletters.
+                    </label>
+                </section>
+            </form>
+        </section>
+
+        <footer>
+            <section class="FOOTER">
+    
+                <section class="footer-logo">
+                    <section class="logo_container">
+                        <h1><a href="index.html">SOFA <span>KINGDOME</span></a></h1>
+                    </section>
+                        <p>Your comfort is our priority.</p>
+                </section>
+    
+                <section class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>555 Sofa Lane</p>
+                    <p>Halden, Norway</p>
+                    <p>Email: confy@gmail.com</p>
+                    <p>Phone: +47 123 45 678</p>
+                </section>
+            
+                <section class="footer-shortcuts">
+                    <h3>Short Cuts</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </section>
+    
+                <section class="footer-social-media">
+                    <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+                        </ul>
+                </section>
+            </section>
+        </footer>
+    
+    
+    </main>
+    
+
 </body>
