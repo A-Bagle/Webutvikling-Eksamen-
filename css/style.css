@@ -50,67 +50,67 @@ h1 {
   
 /*Header del-----------------------------------------------*/
 
-.header{
+.header {
     width: 100%;
     height: 80px;
-    display: block;
+    display: flex;
+    align-items: center;
     background-color: #101010;
 }
 
-.inner_header{
+.inner_header {
     width: 90%;
     height: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
-.logo_container{
-    height: 100%;
-    display: table;
-    float: left;
+.logo_container {
+    flex: 1; 
+    text-align: center;
 }
 
-.logo_container h1{
+.logo_container h1 {
     color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
     font-size: 28px;
     font-weight: 200;
 }
 
-.logo_container h1 span{
+.logo_container h1 span {
     font-weight: 600;
 }
 
-.navigation{
-    float: right;
-    height: 100%;
+.navigation {
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+    gap: 15px; 
 }
 
-.navigation a{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
-
-.navigation a li {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
+.navigation a {
     color: white;
-    font-size: 14px;
-    transition: color 0.3s ease-in-out; 
-}
-
-.navigation a li:hover {
-    color: #531b89; 
-}
-
-a {
     text-decoration: none;
-    background-color: none;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+    color: #531b89;
+}
+
+.search_container {
+    flex: 1; 
+    text-align: right;
+}
+
+.search_container input {
+    width: 200px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 /* Index ----------------------------------------------------------------------------------------------------- */
@@ -179,6 +179,28 @@ a {
     margin: 0;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
+}
+
+.button-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #531b89;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #6940a8;
 }
 
 .POPULAR_PRODUCTS img {
@@ -308,27 +330,47 @@ a {
 
 /*product html------------------------------------------------------*/
 
-.PRODUCT-AREA{
+/* Breadcrumb Styling */
+.breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #101010;
+}
+
+.breadcrumb a {
+    color: #531b89;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #101010;
+    margin-left: 5px;
+}
+
+/* Product Area */
+.PRODUCT-AREA {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
     margin-bottom: 2rem;
+    align-items: flex-start;
 }
 
-.product-images {
-    width: 60%;
-}
-
-.main-product-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-.thumbnail-images {
+/* Image Area */
+.image-area {
     display: flex;
+    gap: 1rem;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    margin-top: 1rem;
 }
 
 .thumbnail {
@@ -344,8 +386,16 @@ a {
     border: 1px solid #531b89;
 }
 
-.product-info-2 {
-    width: 35%;
+.main-product-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Product Information */
+.product-info {
+    width: 40%;
     padding: 1rem;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -360,13 +410,8 @@ a {
 }
 
 .brand-link a {
-    font-size: 1rem;
     color: #531b89;
     text-decoration: none;
-}
-
-.brand-link a:hover {
-    text-decoration: underline;
 }
 
 .product-price {
@@ -376,10 +421,12 @@ a {
     margin-top: 1rem;
 }
 
+.size-info,
 .color-info {
     margin-top: 1.5rem;
 }
 
+.size-info h3,
 .color-info h3 {
     font-size: 1rem;
     color: #101010;
@@ -390,32 +437,31 @@ a {
     color: #531b89;
 }
 
-
+/* Related Products */
 .related-products {
     margin-top: 3rem;
-    text-align: center;
 }
 
 .related-products h2 {
     font-size: 2rem;
     color: #101010;
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 .product-card {
-    display: inline-block;
-    width: 22%;
-    margin: 1%;
+    width: 100%;
+    margin-bottom: 1.5rem;
     background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
-    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .product-card img {
     width: 100%;
     height: auto;
-    max-height: 100px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
