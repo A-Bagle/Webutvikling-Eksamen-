@@ -267,7 +267,7 @@ h1 {
     padding: 2rem 0;
 }
 
-/* Categories Text */
+
 .CATEGORIES_TEXT {
     color: #101010;
     text-align: center;
@@ -279,27 +279,26 @@ h1 {
     margin: 0;
 }
 
-/* Category Grid */
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns, equal width */
-    gap: 1.5rem; /* Space between images */
-    padding: 0 1rem; /* Padding around the grid */
-    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem; 
+    padding: 0 1rem; 
+    justify-items: center; 
 }
 
 .category-card {
-    position: relative; /* To position the text on top of the image */
-    border: 2px solid #000; /* Black border */
-    border-radius: 8px; /* Optional rounded corners */
-    overflow: hidden; /* To make sure text doesn’t overflow the image */
+    position: relative; 
+    border: 2px solid #000; 
+    border-radius: 8px; 
+    overflow: hidden; 
 }
 
 .image-container {
-    position: relative; /* To allow absolute positioning of the text */
-    width: 100%; /* Make sure the container spans the entire card */
-    height: 250px; /* Set a fixed height for all images */
-    overflow: hidden; /* Ensures images don't exceed container */
+    position: relative; 
+    width: 100%; 
+    height: 250px; 
+    overflow: hidden; 
 }
 
 .category-card img {
@@ -316,9 +315,8 @@ h1 {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Shadow for better visibility */
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.5); 
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -465,6 +463,52 @@ h1 {
     color: #531b89;
 }
 
+.CATEGORIES_TEXT {
+    color: #101010;
+    position: relative; 
+    top: 0; 
+    left: 0;
+    transform: none; 
+    z-index: 5; 
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.POPULAR_CATEGORIES {
+    position: relative; 
+    margin-top: 2rem; 
+    text-align: center;
+    padding: 2rem 0; 
+}
+
+.POPULAR_CATEGORIES .CATEGORIES_TEXT {
+    position: relative;
+    top: 0; 
+    left: 0; 
+    transform: none; 
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+.POPULAR_CATEGORIES img {
+    width: 80%;
+    height: auto; 
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+}
 .related-products {
     margin-top: 3rem;
 }
